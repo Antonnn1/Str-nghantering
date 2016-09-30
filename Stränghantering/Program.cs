@@ -20,6 +20,7 @@ namespace Stränghantering
             Console.WriteLine("\u0022Hallo World\u0022");
             */
 
+            /*
             //Övn 3a
             string text = "Hallo World";
             text = text.ToUpper();
@@ -28,6 +29,11 @@ namespace Stränghantering
             //Övn 3b
             text = text.ToLower();
             Console.WriteLine(text);
+            */
+
+            //Övn 4
+            string text = "Hallo World";
+            Console.WriteLine("Texten " + text + " innehåller " + text.Length + "st tecken");
         }
     }
 }

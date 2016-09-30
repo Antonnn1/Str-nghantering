@@ -15,8 +15,19 @@ namespace Stränghantering
             Console.WriteLine("\u0056\u00E4\u0072\u006D\u0064\u00F6\u0020\u0047\u0079\u006D\u006E\u0061\u0073\u0069\u0075\u006D");
             */
 
+            /*
             //Övn 2
             Console.WriteLine("\u0022Hallo World\u0022");
+            */
+
+            //Övn 3a
+            string text = "Hallo World";
+            text = text.ToUpper();
+            Console.WriteLine(text);
+
+            //Övn 3b
+            text = text.ToLower();
+            Console.WriteLine(text);
         }
     }
 }

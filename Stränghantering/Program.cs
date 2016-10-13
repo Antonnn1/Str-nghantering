@@ -31,9 +31,22 @@ namespace Stränghantering
             Console.WriteLine(text);
             */
 
+            /*
             //Övn 4
             string text = "Hallo World";
             Console.WriteLine("Texten " + text + " innehåller " + text.Length + "st tecken");
+            */
+
+            //Övn 5
+            Console.Write("Mata in en text: ");
+            string inmatat = Console.ReadLine();
+
+            for (int i = inmatat.Length - 1; i >= 0; i--)
+            {
+     
+                Console.WriteLine(inmatat[i]);
+            }
+
         }
     }
 }

@@ -49,6 +49,7 @@ namespace Stränghantering
             }
             */
 
+            /*
             //Övn 6
             string text = "{0} elefant{1} balanserade på en liten liten spindeltråååd.\n" + "Det tyckte {2} var så intressant,\n" + "så {2} gick och hämtade en annan elefant.\n";
             string klartext = string.Format(text, "En", "", "han");
@@ -62,6 +63,13 @@ namespace Stränghantering
             string sistatext = "{0} elefant{1} balanserade på en liten liten spindeltråååd.\n" + "Det tyckte {2} var så intressant,\n" + "Men nu fanns det inte någon mera elefant";
             klartext = string.Format(sistatext, "10", "er", "de");
             Console.WriteLine(klartext);
+            */
+
+            //Övn 7
+            Console.WriteLine("Decimaler:\t3\t2\t1");
+            string format = "\t\t{0:0.000}\t{0:0.00}\t{0:0.0}";
+            string text = string.Format(format, Math.E);
+            Console.WriteLine(text);
         }
     }
 }

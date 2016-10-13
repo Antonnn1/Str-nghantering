@@ -37,6 +37,7 @@ namespace Stränghantering
             Console.WriteLine("Texten " + text + " innehåller " + text.Length + "st tecken");
             */
 
+            /*
             //Övn 5
             Console.Write("Mata in en text: ");
             string inmatat = Console.ReadLine();
@@ -46,7 +47,21 @@ namespace Stränghantering
      
                 Console.WriteLine(inmatat[i]);
             }
+            */
 
+            //Övn 6
+            string text = "{0} elefant{1} balanserade på en liten liten spindeltråååd.\n" + "Det tyckte {2} var så intressant,\n" + "så {2} gick och hämtade en annan elefant.\n";
+            string klartext = string.Format(text, "En", "", "han");
+            Console.WriteLine(klartext);
+
+            for (int i = 2; i < 10; i++)
+            {
+                klartext = string.Format(text, i, "er", "de");
+                Console.WriteLine(klartext);
+            }
+            string sistatext = "{0} elefant{1} balanserade på en liten liten spindeltråååd.\n" + "Det tyckte {2} var så intressant,\n" + "Men nu fanns det inte någon mera elefant";
+            klartext = string.Format(sistatext, "10", "er", "de");
+            Console.WriteLine(klartext);
         }
     }
 }

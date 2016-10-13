@@ -65,11 +65,32 @@ namespace Stränghantering
             Console.WriteLine(klartext);
             */
 
+            /*
             //Övn 7
             Console.WriteLine("Decimaler:\t3\t2\t1");
             string format = "\t\t{0:0.000}\t{0:0.00}\t{0:0.0}";
             string text = string.Format(format, Math.E);
             Console.WriteLine(text);
+            */
+
+            //Övn 8
+            Console.WriteLine("Mata in ett ord");
+            string inmatat = Console.ReadLine();
+
+            for (int i = 0; i < inmatat.Length; i++)
+            {
+                if (inmatat[i] != inmatat[inmatat.Length - 1 - i])
+                {
+                    Console.WriteLine(inmatat + " är inte ett palidrom");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine(inmatat + " är ett palidrom");
+                    break;
+                }
+            }
+
         }
     }
 }
